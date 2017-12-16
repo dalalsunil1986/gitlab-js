@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`request available methods 1`] = `
+Object {
+  "mergeRequest": Object {
+    "accept": [Function],
+    "approve": [Function],
+    "get": [Function],
+    "list": [Function],
+    "notes": [Function],
+    "unaprove": [Function],
+  },
+  "project": Object {
+    "all": [Function],
+    "owned": [Function],
+  },
+}
+`;

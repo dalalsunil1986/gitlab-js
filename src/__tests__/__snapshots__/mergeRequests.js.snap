@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`request accept 1`] = `undefined`;
+
+exports[`request approve 1`] = `undefined`;
+
+exports[`request get 1`] = `
+Array [
+  "/projects/projectId/merge_requests/mergeRequestId",
+]
+`;
+
+exports[`request get 2`] = `
+Array [
+  Array [
+    "/projects/projectId/merge_requests/mergeRequestId",
+  ],
+]
+`;
+
+exports[`request get, no params 1`] = `undefined`;
+
+exports[`request get, no params 2`] = `undefined`;
+
+exports[`request list 1`] = `
+Array [
+  "/projects/projectId/merge_requests",
+]
+`;
+
+exports[`request list 2`] = `
+Array [
+  Array [
+    "/projects/projectId/merge_requests",
+  ],
+]
+`;
+
+exports[`request list, no params 1`] = `undefined`;
+
+exports[`request notes 1`] = `
+Array [
+  "/projects/projectId/merge_requests/mergeRequestId/notes",
+]
+`;
+
+exports[`request notes 2`] = `
+Array [
+  Array [
+    "/projects/projectId/merge_requests/mergeRequestId/notes",
+  ],
+]
+`;
+
+exports[`request notes, no params 1`] = `undefined`;
+
+exports[`request notes, no params 2`] = `undefined`;
+
+exports[`request unaprove 1`] = `undefined`;

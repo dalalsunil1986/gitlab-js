@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`api Call api with url and params 1`] = `
+Array [
+  Array [
+    Object {
+      "hostname": "gitlab.com",
+      "method": "GET",
+      "path": "/api/v4/projects?state=opened&private_token=privateToken",
+      "port": 443,
+    },
+  ],
+]
+`;
+
+exports[`api Call api with url and params 2`] = `
+Array [
+  Object {
+    "hostname": "gitlab.com",
+    "method": "GET",
+    "path": "/api/v4/projects?state=opened&private_token=privateToken",
+    "port": 443,
+  },
+]
+`;
+
+exports[`api Call api with url param only 1`] = `
+Array [
+  Array [
+    Object {
+      "hostname": "gitlab.com",
+      "method": "GET",
+      "path": "/api/v4/projects?private_token=privateToken",
+      "port": 443,
+    },
+  ],
+]
+`;
+
+exports[`api Call api with url param only 2`] = `
+Array [
+  Object {
+    "hostname": "gitlab.com",
+    "method": "GET",
+    "path": "/api/v4/projects?private_token=privateToken",
+    "port": 443,
+  },
+]
+`;
+
+exports[`api Call api with url, params and opts 1`] = `
+Array [
+  Array [
+    Object {
+      "anotherOption": "another option",
+      "hostname": "gitlab.com",
+      "method": "GET",
+      "path": "/api/v4/projects?state=opened&order_by=order%20by&private_token=privateToken",
+      "port": 443,
+    },
+  ],
+]
+`;
+
+exports[`api Call api with url, params and opts 2`] = `
+Array [
+  Object {
+    "anotherOption": "another option",
+    "hostname": "gitlab.com",
+    "method": "GET",
+    "path": "/api/v4/projects?state=opened&order_by=order%20by&private_token=privateToken",
+    "port": 443,
+  },
+]
+`;
+
+exports[`api POST 1`] = `
+Array [
+  Array [
+    Object {
+      "hostname": "gitlab.com",
+      "method": "POST",
+      "path": "/api/v4/projects?state=opened&private_token=privateToken",
+      "port": 443,
+    },
+  ],
+]
+`;
+
+exports[`api POST 2`] = `
+Array [
+  Object {
+    "hostname": "gitlab.com",
+    "method": "POST",
+    "path": "/api/v4/projects?state=opened&private_token=privateToken",
+    "port": 443,
+  },
+]
+`;
+
+exports[`api Throws an exception 1`] = `[Error: Api error]`;

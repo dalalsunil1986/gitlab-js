@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`request all 1`] = `
+Array [
+  "/projects",
+]
+`;
+
+exports[`request all 2`] = `
+Array [
+  Array [
+    "/projects",
+  ],
+]
+`;
+
+exports[`request owned 1`] = `
+Array [
+  "/users/userId/projects",
+]
+`;
+
+exports[`request owned 2`] = `
+Array [
+  Array [
+    "/users/userId/projects",
+  ],
+]
+`;
+
+exports[`request owned, no params 1`] = `undefined`;
