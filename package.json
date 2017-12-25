@@ -1,6 +1,6 @@
 {
   "name": "gitlab-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "gitlab JS interface",
   "main": "src/index.js",
   "scripts": {
@@ -17,6 +17,14 @@
   ],
   "author": "rumax",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rumax/gitlab-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rumax/gitlab-js/issues"
+  },
+  "homepage": "https://github.com/rumax/gitlab-js#readme",
   "devDependencies": {
     "codecov": "^3.0.0",
     "eslint": "^4.13.1",
