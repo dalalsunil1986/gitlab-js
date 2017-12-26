@@ -2,6 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/rumax/gitlab-js.svg?style=shield)](https://circleci.com/gh/rumax/gitlab-js)
 [![codecov](https://codecov.io/gh/rumax/gitlab-js/branch/master/graph/badge.svg)](https://codecov.io/gh/rumax/gitlab-js)
+[![npm version](https://badge.fury.io/js/gitlab-js.svg)](https://badge.fury.io/js/gitlab-js)
 
 JS implementation for [gitlab API](https://docs.gitlab.com/ee/api/README.html).
 
