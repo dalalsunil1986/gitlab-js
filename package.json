@@ -4,6 +4,7 @@
   "description": "gitlab JS interface",
   "main": "src/index.js",
   "scripts": {
+    "lint": "eslint src",
     "prepublishOnly": "npm test",
     "test": "jest",
     "test-coverage": "jest --coverage",
