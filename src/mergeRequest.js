@@ -2,19 +2,24 @@ const { msg } = require('extra-log');
 
 const api = require('./utils/api');
 
+const defaultOpts = { simple: true };
+
 module.exports = {
 
-  async list(projectId) {
+  async list(projectId, opts = {}) {
     if (!projectId) {
       msg('projectId has to be provided to get merge requests');
       return undefined;
     }
     const path = `/projects/${projectId}/merge_requests`;
-    return api(path);
+    return api(path, {
+      ...defaultOpts,
+      ...opts,
+    });
   },
 
 
-  async get(projectId, mergeRequestId) {
+  async get(projectId, mergeRequestId, opts = {}) {
     if (!projectId) {
       msg('projectId has to be provided to get merge requests');
       return undefined;
@@ -24,11 +29,14 @@ module.exports = {
       return undefined;
     }
     const path = `/projects/${projectId}/merge_requests/${mergeRequestId}`;
-    return api(path);
+    return api(path, {
+      ...defaultOpts,
+      ...opts,
+    });
   },
 
 
-  async notes(projectId, mergeRequestId) {
+  async notes(projectId, mergeRequestId, opts = {}) {
     if (!projectId) {
       msg('projectId has to be provided to get merge requests');
       return undefined;
@@ -38,7 +46,10 @@ module.exports = {
       return undefined;
     }
     const path = `/projects/${projectId}/merge_requests/${mergeRequestId}/notes`;
-    return api(path);
+    return api(path, {
+      ...defaultOpts,
+      ...opts,
+    });
   },
 
 

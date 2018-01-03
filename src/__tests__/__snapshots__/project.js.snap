@@ -3,6 +3,9 @@
 exports[`request all 1`] = `
 Array [
   "/projects",
+  Object {
+    "simple": true,
+  },
 ]
 `;
 
@@ -10,6 +13,31 @@ exports[`request all 2`] = `
 Array [
   Array [
     "/projects",
+    Object {
+      "simple": true,
+    },
+  ],
+]
+`;
+
+exports[`request all with opts 1`] = `
+Array [
+  "/projects",
+  Object {
+    "owned": true,
+    "simple": false,
+  },
+]
+`;
+
+exports[`request all with opts 2`] = `
+Array [
+  Array [
+    "/projects",
+    Object {
+      "owned": true,
+      "simple": false,
+    },
   ],
 ]
 `;
@@ -17,6 +45,9 @@ Array [
 exports[`request owned 1`] = `
 Array [
   "/users/userId/projects",
+  Object {
+    "simple": true,
+  },
 ]
 `;
 
@@ -24,6 +55,9 @@ exports[`request owned 2`] = `
 Array [
   Array [
     "/users/userId/projects",
+    Object {
+      "simple": true,
+    },
   ],
 ]
 `;

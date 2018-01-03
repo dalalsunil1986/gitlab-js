@@ -20,6 +20,15 @@ describe('request', () => {
   });
 
 
+  it('all with opts', async () => {
+    const response = await project.all({ simple: false, owned: true });
+
+    expect(response).toMatchSnapshot();
+    expect(api).toHaveBeenCalledTimes(1);
+    expect(api.mock.calls).toMatchSnapshot();
+  });
+
+
   it('owned', async () => {
     const response = await project.owned('userId');
 
