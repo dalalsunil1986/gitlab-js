@@ -19,14 +19,14 @@ const [
 if (!command) {
   msg(`Command has to be provided. Example:
     - node gitlab_cli.js project
-    - node gitlab_cli.js mergeRequests`);
+    - node gitlab_cli.js mergeRequest`);
   process.exit(1);
 }
 
 if (!gitlab[command]) {
   msg(`Unknown command ${command}. Supported:
     - node gitlab_cli.js project
-    - node gitlab_cli.js mergeRequests`);
+    - node gitlab_cli.js mergeRequest`);
   process.exit(1);
 }
 
@@ -38,11 +38,11 @@ if (!action && command === 'project') {
   process.exit(1);
 }
 
-if (!action && command === 'project') {
+if (!action && command === 'mergeRequest') {
   msg(`Action has to be provided. Supported:
-    - node gitlab_cli.js mergeRequests list $projectId
-    - node gitlab_cli.js mergeRequests get $projectId $mergeRequestId
-    - node gitlab_cli.js mergeRequests notes $projectId $mergeRequestId`);
+    - node gitlab_cli.js mergeRequest list $projectId
+    - node gitlab_cli.js mergeRequest get $projectId $mergeRequestId
+    - node gitlab_cli.js mergeRequest notes $projectId $mergeRequestId`);
   process.exit(1);
 }
 
