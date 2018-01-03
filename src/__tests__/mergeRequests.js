@@ -20,6 +20,15 @@ describe('request', () => {
   });
 
 
+  it('list with opts', async () => {
+    const response = await mergeRequest.list('projectId', { simple: false });
+
+    expect(response).toMatchSnapshot();
+    expect(api).toHaveBeenCalledTimes(1);
+    expect(api.mock.calls).toMatchSnapshot();
+  });
+
+
   it('list, no params', async () => {
     const response = await mergeRequest.list();
 

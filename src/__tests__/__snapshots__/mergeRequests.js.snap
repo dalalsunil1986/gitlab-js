@@ -7,6 +7,9 @@ exports[`request approve 1`] = `undefined`;
 exports[`request get 1`] = `
 Array [
   "/projects/projectId/merge_requests/mergeRequestId",
+  Object {
+    "simple": true,
+  },
 ]
 `;
 
@@ -14,6 +17,9 @@ exports[`request get 2`] = `
 Array [
   Array [
     "/projects/projectId/merge_requests/mergeRequestId",
+    Object {
+      "simple": true,
+    },
   ],
 ]
 `;
@@ -25,6 +31,9 @@ exports[`request get, no params 2`] = `undefined`;
 exports[`request list 1`] = `
 Array [
   "/projects/projectId/merge_requests",
+  Object {
+    "simple": true,
+  },
 ]
 `;
 
@@ -32,6 +41,29 @@ exports[`request list 2`] = `
 Array [
   Array [
     "/projects/projectId/merge_requests",
+    Object {
+      "simple": true,
+    },
+  ],
+]
+`;
+
+exports[`request list with opts 1`] = `
+Array [
+  "/projects/projectId/merge_requests",
+  Object {
+    "simple": false,
+  },
+]
+`;
+
+exports[`request list with opts 2`] = `
+Array [
+  Array [
+    "/projects/projectId/merge_requests",
+    Object {
+      "simple": false,
+    },
   ],
 ]
 `;
@@ -41,6 +73,9 @@ exports[`request list, no params 1`] = `undefined`;
 exports[`request notes 1`] = `
 Array [
   "/projects/projectId/merge_requests/mergeRequestId/notes",
+  Object {
+    "simple": true,
+  },
 ]
 `;
 
@@ -48,6 +83,9 @@ exports[`request notes 2`] = `
 Array [
   Array [
     "/projects/projectId/merge_requests/mergeRequestId/notes",
+    Object {
+      "simple": true,
+    },
   ],
 ]
 `;
