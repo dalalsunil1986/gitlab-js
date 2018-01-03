@@ -6,7 +6,17 @@ module.exports = {
 
   async all() {
     const path = '/projects';
-    return api(path);
+    return api(path, { simple: true });
+  },
+
+
+  async search(search) {
+    if (!search) {
+      msg('search criteria is required');
+      return undefined;
+    }
+    const path = '/projects';
+    return api(path, { search, simple: true });
   },
 
 
@@ -16,6 +26,6 @@ module.exports = {
       return undefined;
     }
     const path = `/users/${userId}/projects`;
-    return api(path);
+    return api(path, { simple: true });
   },
 };

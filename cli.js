@@ -33,6 +33,7 @@ if (!gitlab[command]) {
 if (!action && command === 'project') {
   msg(`Action has to be provided. Supported:
     - node gitlab_cli.js project all
+    - node gitlab_cli.js project search $searchCriteria
     - node gitlab_cli.js project owned $userId`);
   process.exit(1);
 }
