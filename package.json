@@ -32,21 +32,20 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-import": "^2.8.0",
-    "jest": "^22.0.4"
+    "jest": "^22.4.2"
   },
   "dependencies": {
     "extra-log": "^1.0.0"
   },
   "jest": {
     "coverageDirectory": "./coverage/",
-    "bug": "https://github.com/facebook/jest/issues/5082",
-    "XcollectCoverage": true,
+    "collectCoverage": true,
     "coverageThreshold": {
       "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
+        "branches": 70,
+        "functions": 25,
+        "lines": 70,
+        "statements": 70
       }
     }
   }
