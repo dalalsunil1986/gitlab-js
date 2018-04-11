@@ -39,14 +39,6 @@
   },
   "jest": {
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "coverageThreshold": {
-      "global": {
-        "branches": 70,
-        "functions": 25,
-        "lines": 70,
-        "statements": 70
-      }
-    }
+    "collectCoverage": true
   }
 }

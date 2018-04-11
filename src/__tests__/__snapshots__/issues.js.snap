@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`issues addComment 1`] = `
+Array [
+  "/projects/projectId/issues/issueId/notes",
+  Object {
+    "body": "addComment",
+  },
+  Object {
+    "method": "POST",
+  },
+]
+`;
+
+exports[`issues addComment 2`] = `
+Array [
+  Array [
+    "/projects/projectId/issues/issueId/notes",
+    Object {
+      "body": "addComment",
+    },
+    Object {
+      "method": "POST",
+    },
+  ],
+]
+`;
+
+exports[`issues delete 1`] = `
+Array [
+  "/projects/projectId/issues/issueId",
+  Object {},
+  Object {
+    "method": "DELETE",
+  },
+]
+`;
+
+exports[`issues delete 2`] = `
+Array [
+  Array [
+    "/projects/projectId/issues/issueId",
+    Object {},
+    Object {
+      "method": "DELETE",
+    },
+  ],
+]
+`;
+
+exports[`issues list 1`] = `
+Array [
+  "/projects/projectId/issues",
+  Object {
+    "simple": true,
+  },
+]
+`;
+
+exports[`issues list 2`] = `
+Array [
+  Array [
+    "/projects/projectId/issues",
+    Object {
+      "simple": true,
+    },
+  ],
+]
+`;
+
+exports[`issues report 1`] = `
+Array [
+  "/projects/projectId/issues",
+  Object {
+    "description": "description",
+    "id": "projectId",
+    "title": "title",
+  },
+  Object {
+    "method": "POST",
+  },
+]
+`;
+
+exports[`issues report 2`] = `
+Array [
+  Array [
+    "/projects/projectId/issues",
+    Object {
+      "description": "description",
+      "id": "projectId",
+      "title": "title",
+    },
+    Object {
+      "method": "POST",
+    },
+  ],
+]
+`;

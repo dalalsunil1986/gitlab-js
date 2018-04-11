@@ -2,6 +2,12 @@
 
 exports[`request available methods 1`] = `
 Object {
+  "issues": Object {
+    "addComment": [Function],
+    "delete": [Function],
+    "list": [Function],
+    "report": [Function],
+  },
   "mergeRequest": Object {
     "accept": [Function],
     "approve": [Function],
