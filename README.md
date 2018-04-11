@@ -8,6 +8,7 @@ JS implementation for [gitlab API](https://docs.gitlab.com/ee/api/README.html).
 
 Current implementation includes basic functionality, including:
 
+- [Issues](https://docs.gitlab.com/ee/api/issues.html)
 - [Get all projects](https://docs.gitlab.com/ee/api/projects.html#list-all-projects)
 - [List user projects ](https://docs.gitlab.com/ee/api/projects.html#list-user-projects)
 - [List project merge requests](https://docs.gitlab.com/ee/api/merge_requests.html#list-project-merge-requests)
@@ -15,12 +16,29 @@ Current implementation includes basic functionality, including:
 - [Comments on merge requests](https://docs.gitlab.com/ee/api/merge_requests.html#comments-on-merge-requests)
 
 #### TODO:
-- test coverage. Depends on https://github.com/facebook/jest/issues/5082
 - Other gitlab api
 - Implementation for web
 
+### JavaScript implementation
+
+```
+const gitlab = require('gitlab-js');
+
+const projectId = 1;
+
+const getIssues = async (title) => {
+  const issues = await issues.list(projectId, { search: title });
+
+  if (issues.length > 0) {
+    console.log('Issues found', issues);
+  }
+}
+
+getIssues();
+```
+
 ### Node cli implementation:
-- `node cli.js` to get help and list of supported commands
-- `node gitlab_cli.js project all` to get all projects
-- `node gitlab_cli.js mergeRequest list $projectId` to list project merge requests
+- `./cli.js` to get help and list of supported commands
+- `./cli.js project all` to get all projects
+- `./cli.js mergeRequest list $projectId` to list project merge requests
 - etc.
