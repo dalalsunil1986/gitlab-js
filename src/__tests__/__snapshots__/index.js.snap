@@ -2,6 +2,12 @@
 
 exports[`request available methods 1`] = `
 Object {
+  "config": Object {
+    "setHostname": [Function],
+    "setPort": [Function],
+    "setPrivateToken": [Function],
+    "setUserId": [Function],
+  },
   "issues": Object {
     "addComment": [Function],
     "delete": [Function],
